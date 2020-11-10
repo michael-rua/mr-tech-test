@@ -1,5 +1,11 @@
 # MR Frontend Developer Technical Test
 
+**To Run:**
+
+npm i
+
+npm start
+
 ## Tasks 
 
 **Create a responsive web page made up of 5 main components:**
