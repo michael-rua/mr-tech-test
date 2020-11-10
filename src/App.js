@@ -1,9 +1,12 @@
-import './App.css';
+import NavBar from './NavBar'
+import Body from './Body'
+import './index.css'
 
 function App() {
   return (
     <div className="App">
-      <p>hello</p>
+      <NavBar />
+      <Body />
     </div>
   );
 }
