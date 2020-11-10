@@ -66,11 +66,6 @@ Clicking Add to Cart without size selected will show an error message (include s
 Successfully adding a product to cart, with a size option selected, will populate this product in the mini cart section.
 There should only be one row of the same size product, product quantity in minicart increases as the same size product is added multiple times.
 
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
