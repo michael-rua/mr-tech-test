@@ -18,6 +18,8 @@ code {
     monospace;
 }
 
+/* Nav Component */
+
 .nav-bar {
   justify-content: center;
   max-width: 100%;
@@ -37,14 +39,124 @@ code {
   color: #222222;
 }
 
+/* Body Component */
+
 .body-container {
   display: flex;
-
+  flex-direction: row;
+  margin-top: 40px;
+  margin-left: 25%;
+  margin-right: 20%;
+  
 }
 
 .classic-tee {
-  width: 200px;
+  max-width: 400px;
   height: auto;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+  justify-content: space-between;
+  max-height: 330px;
+  
+}
+.title {
+  font-weight: 400;
+  color: #222222;
+}
+.lines {
+  border-top: #F6F6F7;
+  border-bottom: #F6F6F7;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom-style: solid;
+  border-bottom-width: 0.1px;
+  border-top-style: solid;
+  border-top-width: 0.1px;
+}
+
+.description {
+  color: #888888;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+}
+
+/* Size Component */
+
+.size-container {
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  justify-content: space-between;
+}
+.size-title {
+  font-size: 0.8rem;
+  color: #888888;
+
+}
+.size-required {
+  color:#C90000;
+}
+.size-boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 132px;
+  
+}
+
+.small {
+  font-size: 0.8rem;
+  color: #888888;
+  border:#CCCCCC;
+  border-style: solid;
+  padding: 10px 15px;
+  border-width: 0.4px;
+}
+.small:hover {
+  cursor: pointer;
+}
+.medium {
+  color: #888888;
+  font-size: 0.8rem;
+  border:#CCCCCC;
+  border-style: solid;
+  padding: 10px 15px;
+  border-width: 0.4px;
+}
+.medium:hover {
+  cursor: pointer;
+}
+.large {
+  color: #888888;
+  font-size: 0.8rem;
+  border:#CCCCCC;
+  border-style: solid;
+  padding: 10px 15px;
+  border-width: 0.4px;
+}
+.large:hover {
+  cursor: pointer;
+}
+
+.size-button {
+  font-weight: 600;
+  background-color: white;
+  border-width: 2px;
+  border-color: black;
+  width: 146px;
+  height: 35px;
+  transition: 0s background-color;
+}
+.size-button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  transition: 0.2s background-color;
+  
 }
 
 @media screen and (max-width: 1024px) {
@@ -60,10 +172,33 @@ code {
   }
   
   .nav-text {
-    position: fixed;
+    position: absolute;
     right: 5%;
     font-size: .7rem;
     color: #222222;
   }
  
+  .body-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .classic-tee {
+    max-width: 400px;
+    height: auto;
+    
+  }
+  .description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 0px;
+  }
+
 }
