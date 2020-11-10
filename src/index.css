@@ -10,18 +10,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 .nav-bar {
+  justify-content: center;
+  max-width: 100%;
   display: flex;
   align-items: center;
   height: 30px;
   background: #F6F6F7;
-  margin: 15px 200px  ;
+  margin-top: 15px;
+  margin-left: 11%;
+  margin-right: 11%;
 }
 
 .nav-text {
@@ -29,4 +35,35 @@ code {
   right: 20%;
   font-size: .7rem;
   color: #222222;
+}
+
+.body-container {
+  display: flex;
+
+}
+
+.classic-tee {
+  width: 200px;
+  height: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    background: #F6F6F7;
+    margin-top: 15px;
+    margin-left: 0;
+  margin-right: 0;
+  }
+  
+  .nav-text {
+    position: fixed;
+    right: 5%;
+    font-size: .7rem;
+    color: #222222;
+  }
+ 
 }

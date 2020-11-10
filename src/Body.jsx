@@ -7,6 +7,7 @@ export default function Body () {
   return (
     <div className= 'body-container'>
       <img 
+      className = 'classic-tee'
       src= {whiteVNeck}
       alt='person wearing white V-neck T-shirt'/>
 
