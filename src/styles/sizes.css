@@ -1,0 +1,111 @@
+/* Size Component */
+
+.size-container {
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  justify-content: space-between;
+}
+.size-title {
+  font-size: 0.8rem;
+  color: #888888;
+
+}
+.size-required {
+  color:#C90000;
+}
+.size-boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 132px;
+  
+}
+
+.small {
+  font-size: 0.8rem;
+  color: #888888;
+  border:#CCCCCC;
+  border-style: solid;
+  padding: 10px 15px;
+  border-width: 0.4px;
+}
+.small-clicked {
+  font-size: 0.8rem;
+  color: #222222;
+  border:#222222;
+  border-style: solid;
+  padding: 10px 15px;
+  border-width: 2px;
+  box-sizing: border-box;
+}
+.small-clicked:hover {
+  cursor: pointer;
+}
+.small:hover {
+  cursor: pointer;
+}
+.medium {
+  color: #888888;
+  font-size: 0.8rem;
+  border:#CCCCCC;
+  border-style: solid;
+  padding: 10px 15px;
+  border-width: 0.4px;
+}
+.medium:hover {
+  cursor: pointer;
+}
+
+.medium-clicked {
+  font-size: 0.8rem;
+  color: #222222;
+  border:#222222;
+  border-style: solid;
+  padding: 10px 15px;
+  border-width: 2px;
+  
+}
+.medium-clicked:hover {
+  cursor: pointer;
+}
+.large {
+  color: #888888;
+  font-size: 0.8rem;
+  border:#CCCCCC;
+  border-style: solid;
+  padding: 10px 15px;
+  border-width: 0.4px;
+}
+.large:hover {
+  cursor: pointer;
+}
+
+.large-clicked {
+  font-size: 0.8rem;
+  color: #222222;
+  border:#222222;
+  border-style: solid;
+  padding: 10px 15px;
+  border-width: 2px;
+}
+.large-clicked:hover {
+  cursor: pointer;
+}
+
+.size-button {
+  font-weight: 600;
+  background-color: white;
+  border-width: 2px;
+  border-color: black;
+  width: 146px;
+  height: 35px;
+  transition: 0s background-color;
+}
+.size-button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  transition: 0.2s background-color;
+  
+}

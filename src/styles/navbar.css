@@ -1,0 +1,45 @@
+/* Nav Component */
+
+.nav-bar {
+  z-index: 1000;
+  justify-content: center;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  background: #F6F6F7;
+  margin-top: 15px;
+  margin-left: 11%;
+  margin-right: 11%;
+}
+
+.nav-text {
+  position: fixed;
+  right: 20%;
+  font-size: .7rem;
+  color: #222222;
+}
+
+.nav-text:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    background: #F6F6F7;
+    margin-top: 15px;
+    margin-left: 0;
+  margin-right: 0;
+  }
+  
+  .nav-text {
+    position: absolute;
+    right: 5%;
+    font-size: .7rem;
+    color: #222222;
+  }
+}

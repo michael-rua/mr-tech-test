@@ -1,6 +1,6 @@
 import React from 'react'
 import MiniCart from './MiniCart'
-import './index.css'
+import './styles/navbar.css'
 
 export default function NavBar () {
 

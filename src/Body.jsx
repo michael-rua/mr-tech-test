@@ -1,5 +1,5 @@
 import React from 'react'
-import './index.css'
+import './styles/body.css'
 import Sizes from './Sizes'
 
 export default function Body () {
