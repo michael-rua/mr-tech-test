@@ -21,6 +21,7 @@ code {
 /* Nav Component */
 
 .nav-bar {
+  z-index: 1000;
   justify-content: center;
   max-width: 100%;
   display: flex;
@@ -39,9 +40,14 @@ code {
   color: #222222;
 }
 
+.nav-text:hover {
+  cursor: pointer;
+}
+
 /* Body Component */
 
 .body-container {
+  z-index: 1000;
   display: flex;
   flex-direction: row;
   margin-top: 40px;
@@ -116,6 +122,17 @@ code {
   padding: 10px 15px;
   border-width: 0.4px;
 }
+.small-clicked {
+  font-size: 0.8rem;
+  color: #222222;
+  border:#222222;
+  border-style: solid;
+  padding: 10px 15px;
+  border-width: 2px;
+}
+.small-clicked:hover {
+  cursor: pointer;
+}
 .small:hover {
   cursor: pointer;
 }
@@ -130,6 +147,18 @@ code {
 .medium:hover {
   cursor: pointer;
 }
+
+.medium-clicked {
+  font-size: 0.8rem;
+  color: #222222;
+  border:#222222;
+  border-style: solid;
+  padding: 10px 15px;
+  border-width: 2px;
+}
+.medium-clicked:hover {
+  cursor: pointer;
+}
 .large {
   color: #888888;
   font-size: 0.8rem;
@@ -139,6 +168,18 @@ code {
   border-width: 0.4px;
 }
 .large:hover {
+  cursor: pointer;
+}
+
+.large-clicked {
+  font-size: 0.8rem;
+  color: #222222;
+  border:#222222;
+  border-style: solid;
+  padding: 10px 15px;
+  border-width: 2px;
+}
+.large-clicked:hover {
   cursor: pointer;
 }
 
@@ -159,6 +200,51 @@ code {
   
 }
 
+/* MiniCart */
+
+.minicart-container {
+  padding: 20px 20px 20px;
+  display: flex;
+  flex-flow: column wrap ;
+  top: 35px;
+  position: absolute;
+  margin-right: 11%;
+    right:8%;
+  height: 270px;
+  width: 300px;
+  z-index: 1001;
+  border:#cccccc;
+  border-style: solid;
+  border-width: 0.4px;
+  background-color: white;
+  
+}
+.img-div {
+  order: 1;
+  display: flex;
+}
+.card {
+  
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: left;
+}
+.details {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  height: 70px;
+  /* margin-left: 20px;*/
+} 
+ 
+.mini-img {
+  display: flex;
+  width: auto;
+  height: 100px;
+}
 @media screen and (max-width: 1024px) {
   .nav-bar {
     width: 100%;
@@ -199,6 +285,21 @@ code {
     margin-top: 3rem;
     margin-bottom: 3rem;
     margin-left: 0px;
+  }
+  .minicart-container {
+    padding: 20px 20px 20px;
+    display: flex;
+    flex-direction:column ;
+    top: 35px;
+    position: absolute;
+    margin-right: 0;
+    height: 270px;
+    width: 90%;
+    z-index: 1001;
+    border:#cccccc;
+    border-style: solid;
+    border-width: 0.4px;
+    background-color: white;
   }
 
 }
